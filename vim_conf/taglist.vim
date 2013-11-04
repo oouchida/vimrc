@@ -1,6 +1,6 @@
 Bundle 'taglist.vim'
 
-set tags=tags
+set tags=.tags;
 
 let g:Tlist_Ctags_Cmd = "            ctags"
 let Tlist_Show_One_File = 1

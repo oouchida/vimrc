@@ -71,3 +71,9 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd filetype php :set makeprg=php\ -l\ %
 autocmd filetype php :set errorformat=%m\ in\ %f\ on\ line\ %l
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""local
+if filereadable(expand('~/vim_conf/local.vim'))
+  source ~/vim_conf/local.vim
+endif
