@@ -62,6 +62,12 @@ if filereadable(expand('~/vim_conf/vim-tags.vim'))
   source ~/vim_conf/vim-tags.vim
 endif
 
+""srcexp
+if filereadable(expand('~/vim_conf/srcexp.vim'))
+  source ~/vim_conf/srcexp.vim
+endif
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd filetype php :set makeprg=php\ -l\ %
 autocmd filetype php :set errorformat=%m\ in\ %f\ on\ line\ %l
