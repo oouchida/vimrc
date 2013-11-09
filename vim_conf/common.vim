@@ -12,6 +12,9 @@ set shiftwidth=2
 ""標準は行数表示
 set nu
 
+""タグ文字表示
+set list
+
 ""普通のエディタに近づけるために
 """ BackSpaceキーの設定
 set backspace=start,eol,indent
@@ -28,8 +31,8 @@ set nocompatible
 filetype off
 
 ""vundle用
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+"set rtp+=~/.vim/bundle/vundle/
+"call vundle#rc()
 
 ""NeoBundle用
 if has('vim_starting')
@@ -69,8 +72,13 @@ endif
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""makeコマンド用
 autocmd filetype php :set makeprg=php\ -l\ %
 autocmd filetype php :set errorformat=%m\ in\ %f\ on\ line\ %l
+autocmd filetype ctp :set makeprg=php\ -l\ %
+autocmd filetype ctp :set errorformat=%m\ in\ %f\ on\ line\ %l
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""local
