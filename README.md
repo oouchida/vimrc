@@ -20,9 +20,11 @@
     @curl.exe %*
 
 * ctags
+最新版のctagsをインストールしてください。Mac標準で搭載されているctagsでは動作しない可能性があります。
 
 ## Install
 以下を.vimrcに追加してください。
+
     if filereadable(expand('~/vim_conf/vimrc.common'))
       source ~/vim_conf/vimrc.common
     endif
@@ -37,6 +39,4 @@
     endif
 
 ### git clone
-    mkdir ~/vim_conf
-    cd ~/vim_conf
     git clone git@github.com:oouchida/vim_conf.git
