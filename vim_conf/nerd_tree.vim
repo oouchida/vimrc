@@ -110,6 +110,7 @@ let g:NERDTreeWinSize=45
 "let g:NERDTreeMinimalUI=0
 
 "古い形式である|と+と~の記号だけでツリー表示
+"ターミナルなどで表示する場合は記号だけの方が画面が崩れないかもしれない
 "0 または 1
-"初期値0: \などの記号も使う
-"let g:NERDTreeDirArrows=0
+"初期値1: グラフィカルに表示する
+"let g:NERDTreeDirArrows=1
