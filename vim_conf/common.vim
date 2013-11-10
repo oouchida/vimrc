@@ -60,10 +60,6 @@ if filereadable(expand('~/vim_conf/taglist.vim'))
   source ~/vim_conf/taglist.vim
 endif
 
-""vim-tags
-if filereadable(expand('~/vim_conf/vim-tags.vim'))
-  source ~/vim_conf/vim-tags.vim
-endif
 
 ""srcexp
 if filereadable(expand('~/vim_conf/srcexp.vim'))
