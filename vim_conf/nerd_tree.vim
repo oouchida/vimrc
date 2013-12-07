@@ -8,7 +8,7 @@ map <C-e>      :NERDTreeToggle<CR>
 autocmd vimenter * if !argc() | NERDTree | endif
 
 "他のバッファをすべて閉じた時にNERDTreeが開いていたらNERDTreeも一緒に閉じる。
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 "カラー表示する。
 "0 または 1
@@ -113,4 +113,4 @@ let g:NERDTreeWinSize=45
 "ターミナルなどで表示する場合は記号だけの方が画面が崩れないかもしれない
 "0 または 1
 "初期値1: グラフィカルに表示する
-"let g:NERDTreeDirArrows=1
+let g:NERDTreeDirArrows=0

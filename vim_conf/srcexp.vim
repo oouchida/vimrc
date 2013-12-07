@@ -49,4 +49,4 @@ let g:SrcExpl_prevDefKey = "<F3>"
 
 "次の定義に移動するためのジャンプ先を表示する
 "初期値：''
- let g:SrcExpl_nextDefKey = "<F4>" 
+let g:SrcExpl_nextDefKey = "<F4>" 
