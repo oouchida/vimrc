@@ -13,7 +13,8 @@ git clone https://github.com/Shougo/neobundle.vim.git
 cd $HOME
 wget --no-check-certificate https://github.com/oouchida/vimrc/tarball/master -O - | tar xzv
 mv oouchida-vimrc-*/.vimrc $HOME
-mv oouchida-vimrc-*/* $HOME
+mv oouchida-vimrc-*/vim_conf $HOME
+rm -r oouchida-vimrc-*
 # local.vimのインストール
 cat > $HOME/vim_conf/local.vim << EOF
 let Tlist_Ctags_Cmd = "$HOME/ctags-5.8/ctags"
