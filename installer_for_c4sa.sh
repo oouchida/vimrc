@@ -20,7 +20,7 @@ cat > $HOME/vim_conf/local.vim << EOF
 let Tlist_Ctags_Cmd = "$HOME/ctags-5.8/ctags"
 let g:SrcExpl_updateTagsCmd = "$HOME/ctags-5.8/ctags --sort=foldcase -R ."
 let g:NERDTreeDirArrows=0
-cd /canvases/*/data/*/public_html
+cd /canvases/*/data/*/
 EOF
 # ctagsのインストール
 cd $HOME
